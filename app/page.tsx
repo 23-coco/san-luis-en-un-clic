@@ -1,26 +1,30 @@
 
+import Link from "next/link";
+
 const lugares = [
   {
     nombre: "Potrero de los Funes",
     categoria: "Naturaleza y aventura",
     descripcion:
       "Un destino rodeado de sierras, con un lago ideal para disfrutar del paisaje y realizar actividades al aire libre.",
-   imagen: "/imagenes/potrero.png",
-},
+    imagen: "/imagenes/potrero.png",
+    ruta: "/potrero-de-los-funes",
+  },
   {
     nombre: "La Punta",
     categoria: "Cultura e historia",
     descripcion:
       "Una ciudad moderna de San Luis, con espacios culturales, lugares históricos y atractivos para conocer.",
-     imagen: "/imagenes/la-punta.webp",
+    imagen: "/imagenes/la-punta.webp",
+    ruta: "/la-punta",
   },
   {
     nombre: "Estancia Grande",
     categoria: "Sierras y tranquilidad",
     descripcion:
       "Un lugar para descubrir los paisajes serranos, disfrutar de la naturaleza y conocer otra parte de San Luis.",
-    imagen:
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85",
+    imagen: "/imagenes/estancia-grande.jpg",
+    ruta: "/estancia-grande",
   },
 ];
 
@@ -28,9 +32,9 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#f7f5ef] text-[#20352b]">
       <header className="flex items-center justify-between px-6 py-5 md:px-12">
-        <a href="#" className="text-xl font-black tracking-tight">
+        <Link href="/" className="text-xl font-black tracking-tight">
           SAN LUIS<span className="text-[#b47b43]">.</span>
-        </a>
+        </Link>
 
         <nav className="flex gap-5 text-sm font-medium">
           <a href="#lugares" className="hover:text-[#b47b43]">
@@ -103,27 +107,35 @@ export default function Home() {
 
           <div className="grid gap-7 md:grid-cols-3">
             {lugares.map((lugar, indice) => (
-              <article
+              <Link
+                href={lugar.ruta}
                 key={lugar.nombre}
-                className="overflow-hidden rounded-3xl border border-[#e9e7df] bg-[#faf9f5] transition hover:-translate-y-1 hover:shadow-xl"
+                className="block overflow-hidden rounded-3xl border border-[#e9e7df] bg-[#faf9f5] transition hover:-translate-y-1 hover:shadow-xl"
               >
                 <img
                   src={lugar.imagen}
                   alt={lugar.nombre}
                   className="h-56 w-full object-cover"
                 />
+
                 <div className="p-6">
                   <p className="text-xs font-bold uppercase tracking-widest text-[#a36e3d]">
                     0{indice + 1} · {lugar.categoria}
                   </p>
+
                   <h3 className="mt-3 text-2xl font-bold">
                     {lugar.nombre}
                   </h3>
+
                   <p className="mt-3 leading-7 text-[#637166]">
                     {lugar.descripcion}
                   </p>
+
+                  <p className="mt-5 font-bold text-[#a36e3d]">
+                    Descubrir destino →
+                  </p>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
         </div>
