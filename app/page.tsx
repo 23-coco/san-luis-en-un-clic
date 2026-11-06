@@ -211,7 +211,7 @@ export default function Home() {
               </p>
 
               <p className="mt-6 leading-8 text-[#637166]">
-                La Escuela Técnica N.º 3 Eva Duarte de Perón es la
+                La Escuela Técnica Nº 3 Eva Duarte de Perón es la
                 institución educativa en la que nace esta propuesta.
                 Su formación técnica busca brindar a los estudiantes
                 herramientas y conocimientos que les permitan comprender
