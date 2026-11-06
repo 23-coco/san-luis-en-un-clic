@@ -43,6 +43,9 @@ export default function Home() {
           <a href="#proyecto" className="hover:text-[#b47b43]">
             Proyecto
           </a>
+          <a href="#escuela" className="hover:text-[#b47b43]">
+            Escuela
+          </a>
         </nav>
       </header>
 
@@ -146,21 +149,145 @@ export default function Home() {
           <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#e6c49b]">
             Nuestro proyecto escolar
           </p>
+
           <h2 className="mt-4 text-3xl font-black md:text-5xl">
-            Conocé San Luis.
+            Conocer San Luis.
             <br />
             Compartí su belleza.
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl leading-7 text-[#e1e9e2]">
-            Creamos este espacio para dar a conocer los lugares, paisajes y
-            atractivos de nuestra provincia y compartirlos con todos.
+
+          <p className="mx-auto mt-5 max-w-2xl leading-8 text-[#e1e9e2]">
+            San Luis en un clic es una propuesta que busca dar a conocer
+            nuestra provincia a través de sus localidades, paisajes,
+            atractivos naturales y espacios culturales.
+          </p>
+
+          <p className="mx-auto mt-4 max-w-2xl leading-8 text-[#e1e9e2]">
+            A través de esta plataforma queremos acercar información
+            turística de manera sencilla y accesible, invitando a descubrir
+            los diferentes lugares que forman parte de la identidad
+            San Luis.
           </p>
         </div>
       </section>
 
-      <footer className="border-t border-[#e4e0d5] px-6 py-7 text-center text-sm text-[#637166]">
-        San Luis en un clic · Proyecto escolar
-      </footer>
+      <section id="escuela" className="bg-white px-6 py-16 md:px-12 md:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-12 text-center">
+            <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#a36e3d]">
+              Nuestra institución
+            </p>
+
+            <h2 className="mt-3 text-3xl font-black md:text-5xl">
+              La escuela detrás del proyecto.
+            </h2>
+
+            <p className="mx-auto mt-5 max-w-2xl leading-8 text-[#637166]">
+              Una propuesta educativa que conecta el aprendizaje,
+              la formación técnica y el conocimiento de nuestra provincia.
+            </p>
+          </div>
+
+          <div className="grid items-center gap-10 rounded-[2rem] border border-[#e9e7df] bg-[#faf9f5] p-7 md:grid-cols-[0.8fr_1.2fr] md:p-12">
+            <div className="flex flex-col items-center">
+              <img
+                src="/imagenes/escuela.png"
+                alt="Escudo de la Escuela Técnica N.º 3 Eva Duarte de Perón"
+                className="w-full max-w-[260px] rounded-2xl object-contain"
+              />
+
+              <p className="mt-5 text-center text-sm font-bold uppercase tracking-widest text-[#a36e3d]">
+                Escuela Técnica N.º 3
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-black md:text-3xl">
+                Eva Duarte de Perón
+              </h3>
+
+              <p className="mt-2 font-medium text-[#a36e3d]">
+                Villa Mercedes · San Luis
+              </p>
+
+              <p className="mt-6 leading-8 text-[#637166]">
+                La Escuela Técnica N.º 3 Eva Duarte de Perón es la
+                institución educativa en la que nace esta propuesta.
+                Su formación técnica busca brindar a los estudiantes
+                herramientas y conocimientos que les permitan comprender
+                su entorno, desarrollar capacidades y prepararse para
+                nuevos desafíos.
+              </p>
+
+              <h4 className="mb-3 mt-8 text-xl font-black">
+                Nuestra orientación: Servicios Turísticos
+              </h4>
+
+              <p className="leading-8 text-[#637166]">
+                La orientación en Servicios Turísticos permite acercarse
+                al mundo del turismo, conocer el patrimonio natural y
+                cultural, comprender la importancia de los destinos y
+                reconocer el valor de los servicios que forman parte
+                de la actividad turística.
+              </p>
+
+              <p className="mt-5 leading-8 text-[#637166]">
+                Esta formación también invita a desarrollar una mirada
+                sobre el potencial turístico de nuestra región, valorar
+                sus recursos y aprender a comunicar sus atractivos.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-10 rounded-[2rem] bg-[#f2eee4] p-8 text-center md:p-12">
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#a36e3d]">
+              Aprender haciendo
+            </p>
+
+            <h3 className="mt-3 text-2xl font-black md:text-3xl">
+              De la formación a la experiencia.
+            </h3>
+
+            <p className="mx-auto mt-5 max-w-3xl leading-8 text-[#637166]">
+              San Luis en un clic representa una manera de llevar los
+              conocimientos al terreno práctico: investigar destinos,
+              organizar información, comunicar atractivos y utilizar
+              herramientas digitales para acercar el turismo a las personas.
+            </p>
+
+            <p className="mx-auto mt-4 max-w-3xl font-semibold leading-8 text-[#294a39]">
+              Conocer nuestra provincia también es una forma de valorar
+              nuestra identidad.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer className="border-t border-[#e4e0d5] px-6 py-8 text-center text-sm text-[#637166]">
+        <p className="font-semibold">San Luis en un clic</p>
+        <p className="mt-2">
+          Proyecto escolar · Escuela Técnica N.º 3 Eva Duarte de Perón
+        </p>
+      <div className="mt-5 text-xs leading-7">
+  <p className="mb-2 font-bold">Fuentes de información:</p>
+
+  <a href="https://www.argentinaturismo.com.ar/" target="_blank" className="block hover:text-[#b47b43]">
+    Argentina Turismo
+  </a>
+
+  <a href="https://visitarsanluis.com/localidad/la-punta" target="_blank" className="block hover:text-[#b47b43]">
+    Visitar San Luis - La Punta
+  </a>
+
+  <a href="https://agenciasanluis.com/2025/02/22/1028786-potrero-de-los-funes-sierras-rios-y-una-destacada-infraestructura-turistica/" target="_blank" className="block hover:text-[#b47b43]">
+    Agencia San Luis - Potrero de los Funes
+  </a>
+
+  <a href="https://agenciasanluis.com/2025/05/25/1056217-estancia-grande-historia-naturaleza-y-tradicion-en-un-solo-lugar/" target="_blank" className="block hover:text-[#b47b43]">
+    Agencia San Luis - Estancia Grande
+  </a>
+</div>      </footer>
     </main>
   );
 }
+         
