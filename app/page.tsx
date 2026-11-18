@@ -265,29 +265,55 @@ export default function Home() {
 
       <footer className="border-t border-[#e4e0d5] px-6 py-8 text-center text-sm text-[#637166]">
         <p className="font-semibold">San Luis en un clic</p>
+
         <p className="mt-2">
           Proyecto escolar · Escuela Técnica N.º 3 Eva Duarte de Perón
         </p>
-      <div className="mt-5 text-xs leading-7">
-  <p className="mb-2 font-bold">Fuentes de información:</p>
 
-  <a href="https://www.argentinaturismo.com.ar/" target="_blank" className="block hover:text-[#b47b43]">
-    Argentina Turismo
-  </a>
+        <div className="mt-5 text-xs leading-7">
+          <p className="mb-2 font-bold">Fuentes de información:</p>
 
-  <a href="https://visitarsanluis.com/localidad/la-punta" target="_blank" className="block hover:text-[#b47b43]">
-    Visitar San Luis - La Punta
-  </a>
+          <a
+            href="https://www.argentinaturismo.com.ar/"
+            target="_blank"
+            rel="noreferrer"
+            className="block hover:text-[#b47b43]"
+          >
+            Argentina Turismo
+          </a>
 
-  <a href="https://agenciasanluis.com/2025/02/22/1028786-potrero-de-los-funes-sierras-rios-y-una-destacada-infraestructura-turistica/" target="_blank" className="block hover:text-[#b47b43]">
-    Agencia San Luis - Potrero de los Funes
-  </a>
+          <a
+            href="https://visitarsanluis.com/localidad/la-punta"
+            target="_blank"
+            rel="noreferrer"
+            className="block hover:text-[#b47b43]"
+          >
+            Visitar San Luis - La Punta
+          </a>
 
-  <a href="https://agenciasanluis.com/2025/05/25/1056217-estancia-grande-historia-naturaleza-y-tradicion-en-un-solo-lugar/" target="_blank" className="block hover:text-[#b47b43]">
-    Agencia San Luis - Estancia Grande
-  </a>
-</div>      </footer>
+          <a
+            href="https://agenciasanluis.com/2025/02/22/1028786-potrero-de-los-funes-sierras-rios-y-una-destacada-infraestructura-turistica/"
+            target="_blank"
+            rel="noreferrer"
+            className="block hover:text-[#b47b43]"
+          >
+            Agencia San Luis - Potrero de los Funes
+          </a>
+
+          <a
+            href="https://agenciasanluis.com/2025/05/25/1056217-estancia-grande-historia-naturaleza-y-tradicion-en-un-solo-lugar/"
+            target="_blank"
+            rel="noreferrer"
+            className="block hover:text-[#b47b43]"
+          >
+            Agencia San Luis - Estancia Grande
+          </a>
+
+          <p className="mt-4 border-t border-[#e4e0d5] pt-3 text-[#8b795f]">
+            Última actualización: 18 de noviembre de 2026
+          </p>
+        </div>
+      </footer>
     </main>
   );
 }
-         

@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 
 const caracteristicas = [
@@ -168,6 +167,50 @@ export default function EstanciaGrande() {
               Estas propuestas permiten disfrutar de actividades al aire
               libre y compartir espacios recreativos.
             </p>
+          </section>
+
+          <section className="mt-20">
+            <p className="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-[#a36e3d]">
+              Postales del lugar
+            </p>
+
+            <h2 className="mb-7 text-2xl font-black md:text-3xl">
+              Galería de Estancia Grande
+            </h2>
+
+            <div className="grid gap-6 md:grid-cols-2">
+              <article className="overflow-hidden rounded-3xl bg-white shadow-sm">
+                <img
+                  src="/imagenes/estancia-grande.jpg"
+                  alt="Paisaje de Estancia Grande"
+                  className="h-72 w-full object-cover"
+                />
+                <div className="p-5">
+                  <h3 className="text-lg font-bold text-[#294a39]">
+                    Paisajes serranos
+                  </h3>
+                  <p className="mt-2 leading-7 text-[#637166]">
+                    Naturaleza y tranquilidad entre las sierras de San Luis.
+                  </p>
+                </div>
+              </article>
+
+              <article className="overflow-hidden rounded-3xl bg-white shadow-sm">
+                <img
+                  src="/imagenes/estancia-grande-galeria.avif"
+                  alt="Paisaje natural de Estancia Grande"
+                  className="h-72 w-full object-cover"
+                />
+                <div className="p-5">
+                  <h3 className="text-lg font-bold text-[#294a39]">
+                    Naturaleza y agua
+                  </h3>
+                  <p className="mt-2 leading-7 text-[#637166]">
+                    Un paisaje natural para descubrir y disfrutar al aire libre.
+                  </p>
+                </div>
+              </article>
+            </div>
           </section>
 
           <div className="mt-16 flex flex-wrap gap-4">
