@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 
 const caracteristicas = [
@@ -181,16 +182,16 @@ export default function EstanciaGrande() {
             <div className="grid gap-6 md:grid-cols-2">
               <article className="overflow-hidden rounded-3xl bg-white shadow-sm">
                 <img
-                  src="/imagenes/estancia-grande.jpg"
-                  alt="Paisaje de Estancia Grande"
+                  src="/imagenes/estancia-grande-camino.jpg"
+                  alt="Camino arbolado de Estancia Grande"
                   className="h-72 w-full object-cover"
                 />
                 <div className="p-5">
                   <h3 className="text-lg font-bold text-[#294a39]">
-                    Paisajes serranos
+                    Caminos arbolados
                   </h3>
                   <p className="mt-2 leading-7 text-[#637166]">
-                    Naturaleza y tranquilidad entre las sierras de San Luis.
+                    Recorridos rodeados de vegetación y tranquilidad.
                   </p>
                 </div>
               </article>
